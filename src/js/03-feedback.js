@@ -35,6 +35,7 @@ function isSaved() {
 }
 
 function onRestart(evt) {
+
 evt.preventDefault();
 localStorage.removeItem(LOCALSTORAGE_KEY);      
 // щоб видалити все

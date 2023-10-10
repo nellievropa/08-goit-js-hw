@@ -26,17 +26,17 @@ function onFormInput(e) {
 
 function isSaved() {
     const savedForm = formContent;
-    if (savedForm) {
-        formData = savedForm;
-        email.value = savedForm.email || '';
-        message.value = savedForm.message || '';
+    if (savedForm === null) {
+       return;
     }
-
+    formData = savedForm;
+    email.value = savedForm.email || '';
+    message.value = savedForm.message || '';
 }
 
 function onRestart(evt) {
 evt.preventDefault();
-localStorage.removeItem('LOCALSTORAGE_KEY');      
+localStorage.removeItem(LOCALSTORAGE_KEY);      
 // щоб видалити все
 // localStorage.clear();
 evt.currentTarget.reset();

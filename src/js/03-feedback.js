@@ -42,13 +42,14 @@ function onSubmit(evt) {
 
 evt.preventDefault();
 localStorage.removeItem(LOCALSTORAGE_KEY);   
-formData.email = '';
-formData.message = '';
+
 evt.currentTarget.reset();
 
 // щоб видалити все
 // localStorage.clear();
     console.log(formData);
+    formData.email = '';
+formData.message = '';
 
 }
 

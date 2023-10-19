@@ -48,8 +48,6 @@ evt.currentTarget.reset();
 
 // щоб видалити все
 // localStorage.clear();
-// email.value = '';
-// message.value = '';
     console.log(formData);
 
 }

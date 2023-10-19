@@ -1,4 +1,4 @@
-var e,t="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{},n={},i="Expected a function",o=0/0,r=/^\s+|\s+$/g,a=/^[-+]0x[0-9a-f]+$/i,u=/^0b[01]+$/i,f=/^0o[0-7]+$/i,l=parseInt,c="object"==typeof t&&t&&t.Object===Object&&t,s="object"==typeof self&&self&&self.Object===Object&&self,d=c||s||Function("return this")(),m=Object.prototype.toString,g=Math.max,p=Math.min,v=function(){return d.Date.now()};/**
+!function(){var e,t="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{},n={},i="Expected a function",o=0/0,r=/^\s+|\s+$/g,a=/^[-+]0x[0-9a-f]+$/i,u=/^0b[01]+$/i,f=/^0o[0-7]+$/i,l=parseInt,c="object"==typeof t&&t&&t.Object===Object&&t,s="object"==typeof self&&self&&self.Object===Object&&self,d=c||s||Function("return this")(),m=Object.prototype.toString,g=Math.max,p=Math.min,v=function(){return d.Date.now()};/**
  * Checks if `value` is the
  * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
  * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
@@ -150,10 +150,10 @@ f=setTimeout(T,(e=o-l,n=o-c,i=t-e,d?p(i,a-n):i))}function h(e){return(// Only in
 c=e=l,// Start the timer for the trailing edge.
 f=setTimeout(T,t),s?j(e):u);if(d)return(// Handle invocations in a tight loop.
 f=setTimeout(T,t),j(l))}return void 0===f&&(f=setTimeout(T,t)),u}return t=b(t)||0,y(n)&&(s=!!n.leading,a=(d="maxWait"in n)?g(b(n.maxWait)||0,t):a,m="trailing"in n?!!n.trailing:m),O.cancel=function(){void 0!==f&&clearTimeout(f),c=0,o=l=r=f=void 0},O.flush=function(){return void 0===f?u:h(v())},O}(e,t,{leading:o,maxWait:t,trailing:r})};// Option 1
-const j=document.querySelector(".js-feedback-form"),S=document.querySelector('input[type="email"]'),T=document.querySelector('textarea[name="message"]');j.addEventListener("input",((e=n)&&e.__esModule?e.default:e)(function(e){O[e.target.name]=e.target.value,localStorage.setItem(h,JSON.stringify(O))},1e3)),j.addEventListener("submit",function(e){e.preventDefault(),localStorage.removeItem(h),O.email="",O.message="",e.currentTarget.reset(),// щоб видалити все
+let j=document.querySelector(".js-feedback-form"),S=document.querySelector('input[type="email"]'),T=document.querySelector('textarea[name="message"]');j.addEventListener("input",((e=n)&&e.__esModule?e.default:e)(function(e){O[e.target.name]=e.target.value,localStorage.setItem(h,JSON.stringify(O))},1e3)),j.addEventListener("submit",function(e){e.preventDefault(),localStorage.removeItem(h),e.currentTarget.reset(),// щоб видалити все
 // localStorage.clear();
-console.log(O)}// Option 2
-// const refs = {
+console.log(O),O.email="",O.message=""}// Option 2
+);let h="feedback-form-state",O={email:"",message:""},w=JSON.parse(localStorage.getItem(h));null!==w&&(O=w,S.value=w.email||"",T.value=w.message||"");// const refs = {
 //     form: document.querySelector('.js-feedback-form'),
 //     textarea: document.querySelector('.js-feedback-form textarea'),
 // };
@@ -186,6 +186,6 @@ console.log(O)}// Option 2
 //     console.log(refs.textarea.value);
 // }
 // }
-//# sourceMappingURL=03-feedback.5175f758.js.map
-);const h="feedback-form-state";let O={email:"",message:""},w=JSON.parse(localStorage.getItem(h));null!==w&&(O=w,S.value=w.email||"",T.value=w.message||"");
-//# sourceMappingURL=03-feedback.5175f758.js.map
+}();//# sourceMappingURL=03-feedback.657ea40f.js.map
+
+//# sourceMappingURL=03-feedback.657ea40f.js.map
